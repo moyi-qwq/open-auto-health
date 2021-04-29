@@ -4,9 +4,9 @@ from time import sleep
 from selenium.webdriver.chrome.options import Options
 import sys
 
-USER = sys.argv[1]
-PASS = sys.argv[2]
-FLAG = sys.argv[3]
+USER = str(sys.argv[1])
+PASS = str(sys.argv[2])
+FLAG = str(sys.argv[3])
 
 chrome_options = Options()
 chrome_options.add_argument('--headless')
@@ -15,9 +15,9 @@ chrome_options.add_argument('--disable-dev-shm-usage')
 bro = webdriver.Chrome('/usr/bin/chromedriver', chrome_options=chrome_options)
 bro.get('https://e-report.neu.edu.cn/notes/create')
 search_input = bro.find_element_by_id('un')
-search_input.send_keys('20201869')
+search_input.send_keys(USER)
 search_input = bro.find_element_by_id('pd')
-search_input.send_keys('100Wisgood')
+search_input.send_keys(PASS)
 btn = bro.find_element_by_class_name('login_box_landing_btn')
 btn.click()
 if FLAG == '1':
