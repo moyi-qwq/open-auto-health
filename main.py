@@ -30,6 +30,8 @@ search_input.send_keys(PASS)
 btn = bro.find_element_by_class_name('login_box_landing_btn')
 btn.click()
 
+sleep(1)
+
 if FLAG == "1":
 #点击搜索按钮
     btn = bro.find_element_by_id('bind_email_later')
