@@ -37,10 +37,12 @@ if FLAG == "1":
     btn = bro.find_element_by_id('bind_email_later')
     btn.click()
 
+bro.execute_script('window.scrollTo(0,document.body.scrollHeight)')
 #点击搜索按钮
 btn = bro.find_element_by_xpath('//*[@id="app"]/main/div/form/div[1]/table/tbody/tr/td[1]/div/div/div/label[1]/span[2]')
 btn.click()
 
+bro.execute_script('window.scrollTo(0,document.body.scrollHeight)')
 #点击搜索按钮
 btn = bro.find_element_by_xpath('//*[@id="app"]/main/div/form/div[3]/div[2]/table/tbody/tr[1]/td/div/div/div/label[1]/span[1]/span')
 btn.click()
