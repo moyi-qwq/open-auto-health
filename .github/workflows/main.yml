@@ -9,7 +9,7 @@ on:
 
 jobs:
   task:
-    name: health auto
+    name: open-health-auto
     runs-on: ubuntu-latest
 
     steps:
