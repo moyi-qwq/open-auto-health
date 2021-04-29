@@ -33,7 +33,8 @@
   
     - `USER`: 学号
     - `PASS`: 密码
-    - `IP`: ip地址，可以不设置
+    - `FLAG`: 如果未激活NEU邮箱请设为1，已激活邮箱请设为0
+    - 若不清楚自己是否激活邮箱请前往 https://e-report.neu.edu.cn/notes/create 进行查询
 
     <p align="center"><img src="https://i.loli.net/2020/02/24/RAPvJ4qu5hUIr2K.png"/></p>
     
