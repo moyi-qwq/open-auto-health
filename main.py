@@ -4,9 +4,9 @@ from time import sleep
 from selenium.webdriver.chrome.options import Options
 import sys
 
-USER = str(sys.argv[1])
-PASS = str(sys.argv[2])
-FLAG = str(sys.argv[3])
+USER : str = sys.argv[1]
+PASS : str = sys.argv[2]
+FLAG : str = sys.argv[3]
 
 chrome_options = Options()
 chrome_options.add_argument('--headless')
